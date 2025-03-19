@@ -5,6 +5,6 @@ for i in arr:
         frequency[i]+=1
     else:
         frequency[i]=1
-for element,count in frequency.items():
-    print(f"element {element} occurs {count} times")
+for i,j in frequency.items():
+    print(f"element {i} occurs {j} times")
 

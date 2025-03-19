@@ -12,12 +12,3 @@ d=date%10
 if d%2==0:
     total_tax=count*tax
 print(total_tax)
-
-
-
-
-
-
-
-    
-

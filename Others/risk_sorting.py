@@ -1,3 +1,6 @@
+# give the len of array and arr items should be equal to len of arr and array should only contain numbers from 0 to 2
+# and return the sorted array
+
 n=int(input("enter the range of array"))
 arr=[]
 risks=list(map(int,input("enter the risks").split()))
