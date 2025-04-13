@@ -1,0 +1,63 @@
+DJANGO TEMPLATE LANGUAGE (DTL)
+
+==>PART-1
+
+create a folder in "firstproject"(where manage.py exists) and create  a home.html file in it
+Now in home.html ,write ur code
+In views.py update the home function by rendering it
+In settings.py update this and import os
+  ==> import os
+  ==> "DIRS": [os.path.join(BASE_DIR,'templates')],
+
+
+
+==>PART-2
+
+install extenstion "jinja"
+create a base.html file under templates folder and write some jinja code (adding blocks) and update home.html as well with jinja code
+
+==>PART-3 Adding two numbers in DJANGO
+
+In the home.html ,write code to get a form for adding two numbers
+and create a "result.html"
+In Views.py give a function called add
+In urls.py add path
+and create a "result.html"
+
+==> PART-4 GET vs POST methods in DJANGO
+
+In home.html add a method='post' and also give == {% csrf_token %}
+In views.py change get method to post
+
+==>PART-5 Model View Template
+
+==PART-6 Static files 1
+
+download a free template 
+Create a new app called "travello"  >>python manage.py startapp travello
+render in the views.py and change in urls.py(in both firstapp and travello)
+runserver  >>python manage.py runserver
+
+==PART-7  Static files 2
+
+create a folder in firstproject called "static"
+copy paste all the folders of your template like css,js ,images folders
+Go to settings.py in firstproject and update about the static folder
+      | | |
+      v v v
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR, 'static')  ##static is where our folders are present
+] 
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')   ##assets is where django reads our files and keeps its folders
+Now in order to create or to alert this assets folder give the following command
+                  >>python manage.py collectstatic
+
+Now we will get the assets folder where we have all css,js,images folders
+
+Now whereever there is a hred=f change them like this ====>  "{% static ' link' %}"
+
+And run the server ,now we will get the template as it is
+
+==> PART-8 PASSING DYNAMIC DATA IN html (part-1)
+

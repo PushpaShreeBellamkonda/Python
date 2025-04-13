@@ -1,0 +1,50 @@
+==>step-1 
+
+python --version
+pip --version
+
+==>step-2
+
+pip install virtualenvwrapper-win
+
+==>step-3
+
+pip show virtualenvwrapper-win
+
+Look for something like:  Location: C:\Users\rgukt\AppData\Roaming\Python\Python310\site-packages
+
+Now we need to ensure the Scripts folder in that path is in your system PATH.
+
+==>Add the Scripts folder to your PATH manually
+Press Win + R, type sysdm.cpl, press Enter.
+
+Go to Advanced tab > Environment Variables.
+
+Under "System variables" or "User variables", find Path and click Edit.
+
+Click New, and add:
+
+Click OK, OK, OK, and then restart your Command Prompt.
+
+==>step-4
+
+mkvirtualenv test
+
+==>step-5
+
+pip install django
+
+==>step-6
+
+django-admin --version
+
+==>step-7
+
+mkdir projects
+django-admin startproject firstproject
+cd projects > cd firstproject
+dir  --to see all files
+python manage.py runserver   --to run the project
+127.0.0.1:8000 --this is django localhost ip address and port number
+
+

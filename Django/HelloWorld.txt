@@ -1,0 +1,16 @@
+==>step-1
+
+go to vs code > open folder "projects" 
+open new terminal and go to "firstproject"(where the manage.py is exist)
+go to the "test" environment bcoz,we have the django there only  >>workon test
+Create a folder(app) called "calc" >>python manage.py startapp calc
+Run the app  >>python manage.py runserver
+
+
+==>step-2
+
+In calc ,Create a file called "urls.py" 
+Now go to views.py in calc and add httpresponse for hello world 
+Now go to urls.py in "firstproject" (the main app) and include the urls.calc in it
+Now again run the server and check the url , you'll get Hello World   >>python manage.py runserver
+
